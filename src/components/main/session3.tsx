@@ -1,6 +1,6 @@
 import styles from '../../css/main/session3.module.css'; 
 import vedio1 from '../../videos/랜덤추첨기.mp4';
-
+import { Link } from 'react-router-dom';
 const Session3 = () => {
     return (
         <div>
@@ -21,7 +21,7 @@ const Session3 = () => {
                     당신의 행운을 테스트해보세요! 큰 행운엔 큰 책임이 따른 다는건 명심 해야겠죠?
                 </p>
                 <p className={styles.link}>
-                <strong><a href='asdasd'>보러 가기</a></strong> 
+                <strong><Link to='/lotto'>보러 가기</Link></strong> 
                 </p>
                 </div>
                 <svg

@@ -1,6 +1,6 @@
 import styles from '../../css/main/session1.module.css'; 
 import vedio1 from '../../videos/뾰로로롱.mp4';
-
+import { Link } from 'react-router-dom';
 const Session1 = () => {
     return (
         <div className={`${styles.container} section`}>
@@ -20,7 +20,7 @@ const Session1 = () => {
             당신의 고민거리를 해결해보세요! 좋은 해답을 얻을지도 모르겠습니다.
           </p>
           <div className={styles.link}>
-          <strong><a href='asdasd'>보러 가기</a></strong> 
+          <strong><Link to='asdasd'>보러 가기</Link></strong> 
           </div>
         </div>
         <svg

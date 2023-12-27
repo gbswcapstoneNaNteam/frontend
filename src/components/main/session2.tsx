@@ -1,6 +1,6 @@
 import styles from '../../css/main/session2.module.css'; 
 import vedio1 from '../../videos/랜덤사이트.mp4';
-
+import { Link } from 'react-router-dom';
 const Session2 = () => {
     return (
         <div>
@@ -21,7 +21,7 @@ const Session2 = () => {
                     당신의 스트레스를 해결해보세요! 익명성을 보장시켜드립니다.
                 </p>
                 <p className={styles.link}>
-                <strong><a href='asdasd'>보러 가기</a></strong> 
+                <strong><Link to='asdasd'>보러 가기</Link></strong> 
                 </p>
                 </div>
                 <svg
