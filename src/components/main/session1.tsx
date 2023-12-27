@@ -20,7 +20,7 @@ const Session1 = () => {
             당신의 고민거리를 해결해보세요! 좋은 해답을 얻을지도 모르겠습니다.
           </p>
           <div className={styles.link}>
-          <strong><Link to='asdasd'>보러 가기</Link></strong> 
+          <strong><Link to='/sora'>보러 가기</Link></strong> 
           </div>
         </div>
         <svg

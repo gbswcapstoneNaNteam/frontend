@@ -72,38 +72,35 @@ video {
 a {
     color: inherit;
 }
+.header{
+  position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    top: 0;
+}
 
 .NaN{
-    position: fixed;
-    z-index: 1;
     font-weight: bolder;
     font-size: 50px;
-    margin-left: 60px;
+    margin-left: 5%;
     margin-top: 15px;
 }
 .ABOUT{
-    position: fixed;
-    z-index: 1;
     font-weight: bolder;
     font-size: 17px;
-    margin-left: 250px;
+    margin-left: 5%;
     margin-top: 40px;
 }
 .CS{
-    position: fixed;
-    z-index: 1;
     font-weight: bolder;
     font-size: 17px;
-    margin-left: 370px;
+    margin-left: 5%;
     margin-top: 40px;
 }
 .HS{
-    position: fixed;
-    z-index: 1;
     font-weight: bolder;
     font-size: 17px;
-    margin-left: 580px;
+    margin-left: 5%;
     margin-top: 40px;
 }
-
-    

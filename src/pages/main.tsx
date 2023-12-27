@@ -3,7 +3,7 @@ import Session2 from '../components/main/session2';
 import Session3 from '../components/main/session3';
 import Session4 from '../components/main/session4';
 import Session5 from '../components/main/session5';
-import Header from '../components/main/header'
+import Header from '../components/header'
 import Start from '../components/main/start';
 import {SectionsContainer, Section} from 'react-fullpage';
 import Title from '../components/main/title';

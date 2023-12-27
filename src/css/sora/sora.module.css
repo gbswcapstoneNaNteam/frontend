@@ -1,0 +1,38 @@
+.img{
+    background-image: url('../img/sora.png');
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    top: 100px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.textbox{
+    width: 700px;
+    height: 250px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.text{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.button{
+    width: 300px;
+    height: 40px;
+    background-color: #2d55e6;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
