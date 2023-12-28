@@ -18,7 +18,7 @@ function Header() {
  
   return (
       <header className={styles.header} style={isurl == "#sectionOne" || isurl == '' ? {color: 'white'} : {color: 'black'}}>
-          <div className={styles.NaN} onClick={()=>{naviagte("/")}}>NaN</div>
+          <div className={styles.NaN} onClick={()=>{window.location.href = "/"}}>NaN</div>
           <div className={styles.ABOUT}>ABOUT</div>
           <div className={styles.CS}>Contact or Support</div>
           <div className={styles.HS}>History</div>

@@ -3,8 +3,8 @@ import vedio1 from '../../videos/랜덤사이트.mp4';
 import { Link } from 'react-router-dom';
 const Session2 = () => {
     return (
-        <div>
-            <div className={styles.container}>
+        <div className={styles.container}> 
+            <div >
                 <div className={styles.video}>
                     <video muted autoPlay loop>
                         <source src={vedio1} type="video/mp4"/>
@@ -35,12 +35,6 @@ const Session2 = () => {
                 >
                     <path d="M0.822998 0L0.88973 336.381" stroke="black"></path>
                 </svg>
-                <p className={styles.number1}>
-                    06
-                </p>
-                <p className={styles.number2}>
-                    01
-                </p>
             </div>
         </div>
       );

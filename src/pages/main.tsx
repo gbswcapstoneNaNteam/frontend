@@ -10,7 +10,7 @@ import Title from '../components/main/title';
 
 const Main = () => {
     let options = {
-        anchors: ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionThree', 'sectionThree', 'sectionThree'],
+        anchors: ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
     };
     return (
         <div>

@@ -3,8 +3,8 @@ import vedio1 from '../../videos/랜덤추첨기.mp4';
 import { Link } from 'react-router-dom';
 const Session3 = () => {
     return (
-        <div>
-            <div className={styles.container}>
+        <div className={styles.container}>
+            <div >
                 <div className={styles.video}>
                     <video muted autoPlay loop>
                         <source src={vedio1} type="video/mp4"/>
