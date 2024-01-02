@@ -4,6 +4,8 @@ import Lotto from './pages/lotto';
 import Sora from './pages/sora/sora';
 import Question from './pages/sora/Question';
 import Output from './pages/sora/output';
+import Tree from './pages/tree/tree';
+import TreeDetail from './pages/tree/treeDetail';
 function App() {
   return (
     <div>
@@ -11,8 +13,10 @@ function App() {
         <Route path="/" element={<Main/>}></Route>
         <Route path="/lotto" element={<Lotto/>}></Route>
         <Route path="/sora" element={<Sora/>}></Route>
-            <Route path="/sora/Question" element={<Question/>}></Route>
-            <Route path="/sora/Question/output/:id" element={<Output/>}></Route>
+        <Route path="/sora/Question" element={<Question/>}></Route>
+        <Route path="/sora/Question/output/:id" element={<Output/>}></Route>
+        <Route path="/tree" element={<Tree/>}></Route> 
+        <Route path="/tree/:id" element={<TreeDetail/>}></Route> 
       </Routes>
     </div>
   );

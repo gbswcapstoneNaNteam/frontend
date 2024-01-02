@@ -1,16 +1,16 @@
+import axios from 'axios';
 import Header from '../components/header';
 import styles from '../css/lotto/lotto.module.css';
 import { useState } from 'react';
 const Lotto = () => {
     const [cnt,setCnt] = useState(1);
     const [lottoBall,setLottoBall] = useState(
-        {
-            lotto: [
-            [1,2,3,4,5,6,7],
+[
+[1,2,3,4,5,6,7],
             [3,4,5,6,7,8,9],
             [1,39,28,45,42,23,10]
             ]
-        }
+        
     );
     const upCnt = () => {
         if(cnt >= 100){
@@ -50,6 +50,18 @@ const Lotto = () => {
         "#b0d840",
         "#fbc400"
     ]
+
+    const handleOnclick = () => {
+        axios.post(`/api/lotto`,{
+            num: cnt
+        })
+        .then((res)=>{
+            console.log(res.data)
+            setLottoBall(res.data);
+        }).catch((err)=>{
+            console.log(err.response);
+        })
+    }
     return(
         <div>
             <Header/>
@@ -68,7 +80,7 @@ const Lotto = () => {
                             </div>
                         </div>
                     </div>
-                    <button className={styles.btn}>
+                    <button className={styles.btn} onClick={handleOnclick}>
                     추첨하기
                     </button>
                 </div>
@@ -76,7 +88,7 @@ const Lotto = () => {
             <div className={styles.lottoOutputContainer}>
                 <div className={styles.lottocenter}>
                     {
-                        lottoBall.lotto.map((it)=>{
+                        lottoBall.map((it)=>{
                             return(
                                 <div className={styles.lottoList}>
                                 {

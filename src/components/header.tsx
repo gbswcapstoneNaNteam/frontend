@@ -1,9 +1,8 @@
 import styles from '../css/main/header.module.css'; 
-import { useLocation,useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useEffect,useState } from 'react';
 function Header() {
   const location = useLocation();
-  const naviagte = useNavigate();
   const [isurl,setIsUrl] = useState('');
 
   useEffect(()=>{
@@ -17,11 +16,11 @@ function Header() {
   },[location])
  
   return (
-      <header className={styles.header} style={isurl == "#sectionOne" || isurl == '' ? {color: 'white'} : {color: 'black'}}>
+      <header className={styles.header} style={isurl == "#main" || isurl == '' ? {color: 'white'} : {color: 'black'}}>
           <div className={styles.NaN} onClick={()=>{window.location.href = "/"}}>NaN</div>
-          <div className={styles.ABOUT}>ABOUT</div>
-          <div className={styles.CS}>Contact or Support</div>
-          <div className={styles.HS}>History</div>
+          <div className={styles.ABOUT}><Link to={"/sora"}>SORA</Link></div>
+          <div className={styles.CS}><Link to={"/tree"}>BAMBOO</Link></div>
+          <div className={styles.HS}><Link to={"/lotto"}>LOTTO</Link></div>
       </header>
   );
 }

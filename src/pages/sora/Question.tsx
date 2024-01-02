@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../../components/header';
 import styles from '../../css/sora/Question.module.css';
 import { useNavigate } from 'react-router-dom';

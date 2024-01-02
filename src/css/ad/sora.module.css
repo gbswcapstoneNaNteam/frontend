@@ -1,0 +1,43 @@
+.main{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: aliceblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.sora{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url("../../img/sora.png");
+}
+.tree{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url("../../img/tree.png");
+}
+.lotto{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 120px;
+}
+.title{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+}

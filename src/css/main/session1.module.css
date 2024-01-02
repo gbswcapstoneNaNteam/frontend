@@ -36,7 +36,7 @@ video {
     opacity: 0.2;
     font-size: 80px;
     text-align: left;
-    color: #000;
+    color: #fff;
     position: fixed;
     z-index: 1;
 }

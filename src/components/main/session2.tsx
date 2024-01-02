@@ -21,7 +21,7 @@ const Session2 = () => {
                     당신의 스트레스를 해결해보세요! 익명성을 보장시켜드립니다.
                 </p>
                 <p className={styles.link}>
-                <strong><Link to='asdasd'>보러 가기</Link></strong> 
+                <strong><Link to='/tree'>보러 가기</Link></strong> 
                 </p>
                 </div>
                 <svg
