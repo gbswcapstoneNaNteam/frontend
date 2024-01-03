@@ -33,6 +33,9 @@ const Tree = () => {
             <div className={styles.bamboo}></div>
             </div>
             <div className={styles.main}>
+              <div className={styles.btnContainer}>
+                <button className={styles.btn}>쓰기</button>
+              </div>
                 {
                     list.map((it)=>{
                         return (
