@@ -2,15 +2,15 @@ import axios from 'axios';
 import Header from '../components/header';
 import styles from '../css/lotto/lotto.module.css';
 import { useState } from 'react';
+
 const Lotto = () => {
     const [cnt,setCnt] = useState(1);
     const [lottoBall,setLottoBall] = useState(
-[
-[1,2,3,4,5,6,7],
-            [3,4,5,6,7,8,9],
-            [1,39,28,45,42,23,10]
-            ]
-        
+    [
+    [1,2,3,4,5,6,7],
+    [3,4,5,6,7,8,9],
+    [1,39,28,45,42,23,10]
+    ]
     );
     const upCnt = () => {
         if(cnt >= 100){

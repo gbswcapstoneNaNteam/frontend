@@ -7,6 +7,7 @@ import Output from './pages/sora/output';
 import Tree from './pages/tree/tree';
 import TreeDetail from './pages/tree/treeDetail';
 import TreeInput from './pages/tree/treeInput';
+import TreeUpdate from './pages/tree/treeUpdate';
 function App() {
   return (
     <div>
@@ -17,8 +18,9 @@ function App() {
         <Route path="/sora/Question" element={<Question/>}></Route>
         <Route path="/sora/Question/output/:id" element={<Output/>}></Route>
         <Route path="/tree" element={<Tree/>}></Route> 
-        <Route path="/tree/:id" element={<TreeDetail/>}></Route>
         <Route path="/tree/create" element={<TreeInput/>}></Route>
+        <Route path="/tree/:id" element={<TreeDetail/>}></Route>
+        <Route path="/tree/update/:id" element={<TreeUpdate/>}></Route>
 
       </Routes>
     </div>

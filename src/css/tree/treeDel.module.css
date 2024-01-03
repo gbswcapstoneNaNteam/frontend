@@ -1,0 +1,44 @@
+.container{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+}
+.deletes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btnDelete{
+    margin-top: 20px;
+    width: 90%;
+    background-color: #af4c4c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    .btnDelete:hover{
+        background-color: #a04545;
+    }
+    .x{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+    }
+.close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}

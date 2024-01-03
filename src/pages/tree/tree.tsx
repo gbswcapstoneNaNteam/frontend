@@ -4,7 +4,9 @@ import Header from "../../components/header";
 import TreeItem from "../../components/tree/treeItem";
 import styles from "../../css/tree/tree.module.css";
 import { useState,useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const Tree = () => {
+    const navigate = useNavigate();
     const [list,setList] = useState([
         {
             code: 1,
@@ -12,8 +14,6 @@ const Tree = () => {
             wirtetime: "2024-01-01", 
             name: "김찬민"
         },
-        
-        
     ])
 
     useEffect(()=>{
@@ -24,7 +24,12 @@ const Tree = () => {
         }).catch((err)=>{
             console.log(err.response);
         })
-    },[])
+    },[]);
+
+    const handleNavigate = () => {
+        navigate('/tree/create');
+    }
+
     return(
         <>
         <Header/>
@@ -34,7 +39,7 @@ const Tree = () => {
             </div>
             <div className={styles.main}>
               <div className={styles.btnContainer}>
-                <button className={styles.btn}>쓰기</button>
+                <button className={styles.btn} onClick={handleNavigate}>쓰기</button>
               </div>
                 {
                     list.map((it)=>{
