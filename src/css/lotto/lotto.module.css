@@ -111,3 +111,43 @@
     align-items: end;
     font-size: 50px;
 }
+.bannerImg{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../img/lottobanner.jpg");
+}
+.lottoTitle{
+    margin: 10px 10px;
+    color: rgb(173, 173, 173);
+}
+.titleLotto{
+    margin: 10px 10px;
+    font-size: 20px;
+}
+.bottomBanner{
+    width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+}
+.movingTextContainer {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 450px;
+  }
+  
+  .movingText {
+    font-size: 80px;
+    font-weight: bolder;
+    display: inline-block;
+    animation: moveText 7s linear infinite; /* 애니메이션 지속 시간과 반복 설정 */
+  }
+  
+  @keyframes moveText {
+    from { transform: translateX(-100%); } /* 시작 위치: 오른쪽 영역 바깥 */
+    to { transform: translateX(230%); } /* 종료 위치: 왼쪽 영역 바깥 */
+  }
+  
