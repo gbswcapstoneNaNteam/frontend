@@ -1,5 +1,5 @@
 import styles from '../../css/main/session1.module.css'; 
-import vedio1 from '../../videos/뾰로로롱.mp4';
+import vedio1 from '../../videos/sora.mp4';
 import { Link } from 'react-router-dom';
 const Session1 = () => {
     return (

@@ -1,5 +1,5 @@
 import styles from '../../css/main/session2.module.css'; 
-import vedio1 from '../../videos/랜덤사이트.mp4';
+import vedio1 from '../../videos/bambo.mp4';
 import { Link } from 'react-router-dom';
 const Session2 = () => {
     return (

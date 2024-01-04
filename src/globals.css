@@ -9,3 +9,16 @@ input::-webkit-inner-spin-button {
 a {
   text-decoration: none;
 }
+
+*{
+  -webkit-tap-highlight-color:transparent;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
+
+button, a, select {
+  outline: 0;
+}
