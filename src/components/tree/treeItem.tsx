@@ -6,6 +6,7 @@ const TreeItem = (props : {id:number,title:string,name:string,date:string}) => {
     const handleLinkOnClick = () => {
         navigate(`/tree/${props.id}`);
     }
+    console.log(props.id)
     return(
         <div className={styles.item} onClick={handleLinkOnClick}>
             <div className={styles.title}>

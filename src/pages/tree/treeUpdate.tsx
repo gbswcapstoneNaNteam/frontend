@@ -27,7 +27,7 @@ const TreeUpdate = () => {
         setDate(res.data[0].wirtetime);
     }).catch((err)=>{
         console.log(err.response);
-    })
+    }) 
 },[])
 
 
@@ -39,10 +39,15 @@ const TreeUpdate = () => {
       password: userPassword,
       wirtetime: date
     }).then((res)=>{
-      console.log("등록에 성공하였습니다.");
+      if(res.data === "실패"){
+        alert("등록에 실패하였습니다.");
+      navigate(`/tree/${id}`);
+        return;
+      }
+      alert("등록에 성공하였습니다.");
       navigate("/tree");
     }).catch((err)=>{
-      console.log("등록에 실패하였습니다.");
+      alert("등록에 실패하였습니다.");
       navigate("/tree");
 
     })

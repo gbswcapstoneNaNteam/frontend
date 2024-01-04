@@ -5,16 +5,15 @@ import TreeItem from "../../components/tree/treeItem";
 import styles from "../../css/tree/tree.module.css";
 import { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+interface List {
+    code:number,
+    title:string,
+    wirtetime: string,
+    name: string
+}
 const Tree = () => {
     const navigate = useNavigate();
-    const [list,setList] = useState([
-        {
-            code: 1,
-            title: "왜 전병우는  JBW가 되었는가",
-            wirtetime: "2024-01-01", 
-            name: "김찬민"
-        },
-    ])
+    const [list,setList] = useState<List[]>([])
 
     useEffect(()=>{
         axios.get(`/api/tree`)

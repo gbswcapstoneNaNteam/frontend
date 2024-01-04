@@ -13,8 +13,19 @@ const TreeDel = (props:{code:string | undefined,onClose:any | undefined}) => {
     }
 
     const handleOnClickDelete = () => {
-        axios.delete(`/api/tree/${props.code}/delete`)
+        axios.post(`/api/tree/${props.code}/delete`,{
+        name,
+        password
+        })
         .then((res)=>{
+            if(res.data === "실패"){
+            alert("삭제에 실패했습니다.")
+            setName("");
+            setPassword("");
+            props.onClose(false);
+            navigate("/tree");
+            return;
+            }
             alert("삭제에 성공했습니다.")
             setName("");
             setPassword("");
